@@ -42,7 +42,7 @@
     </tr>
     <tr>
         <td><strong>I. Lương và phụ cấp (1)</strong></td>
-        <td><strong>{{ number_format($cong_tac_phi_phu_cap_tra_kinh_phi_dao_tao, 0, '.', '.') . ' ' . 'VNĐ'}}</strong></td>
+        <td><strong>{{ number_format($luong_va_phu_cap, 0, '.', '.') . ' ' . 'VNĐ'}}</strong></td>
     </tr>
     <tr>
         <td>Tiền lương thực tế</td>
@@ -61,8 +61,8 @@
         <td>{{ number_format($dien_thoai, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Trả Kinh phí đào tạo/thưởng SL (công nợ của NPP)</td>
-        <td>{{ number_format($tra_kp_dao_tao, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+        <td>Trả Kinh phí đào tạo</td>
+        <td>{{ number_format($tra_kp_dao_tao_tra_giu_lai_thuong_sl_do_cong_no_npp_qua_han, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
         <td>Hỗ trợ/trừ khác</td>
@@ -88,10 +88,6 @@
         <td>{{ number_format($tien_thuong_dat_goc, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Thưởng đạt gốc quý</td>
-        <td>{{ number_format($tong_luong_linh, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
-    </tr>
-    <tr>
         <td>Sản lượng nhóm 1</td>
         <td>{{ number_format($san_luong_n1, 0, '.', '.') . ' ' . 'KG' }}</td>
     </tr>
@@ -106,6 +102,10 @@
     <tr>
         <td>Sản lượng nhóm 4</td>
         <td>{{ number_format($san_luong_n4, 0, '.', '.') . ' ' . 'KG' }}</td>
+    </tr>
+    <tr>
+        <td>Thưởng đạt gốc quý</td>
+        <td>{{ number_format($thuong_dat_goc_quy, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
         <td>Thưởng IOMC</td>
@@ -154,8 +154,8 @@
         <td>{{ number_format($bhxh, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Kinh phí đào tạo/thưởng SL (công nợ của NPP)</td>
-        <td>{{ number_format($kinh_phi_dao_tao, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+        <td>Kinh phí đào tạo</td>
+        <td>{{ number_format($giu_kp_dao_tao_cong_no_npp_qua_han, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
         <td><strong>IV. Giữ lại lương (4)</strong></td>

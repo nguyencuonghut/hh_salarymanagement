@@ -76,12 +76,20 @@
         <td><strong>{{ number_format($thuong_san_luong, 0, '.', '.') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
     <tr>
-        <td>Sản lượng gốc</td>
+        <td>Sản lượng gốc/Kế hoạch</td>
         <td>{{ number_format($san_luong_goc, 0, '.', '.') . ' ' . 'KG' }}</td>
     </tr>
     <tr>
         <td>Sản lượng thực hiện</td>
         <td>{{ number_format($san_luong_thuc_hien, 0, '.', '.') . ' ' . 'KG' }}</td>
+    </tr>
+    <tr>
+        <td>Tỷ lệ gia cầm đẻ tháng này</td>
+        <td>{{ number_format($ty_le_gia_cam_de_thang_nay, 0, '.', '.') . ' ' . '%' }}</td>
+    </tr>
+    <tr>
+        <td>Tỷ lệ gia cầm đẻ tháng trước</td>
+        <td>{{ number_format($ty_le_gia_cam_de_thang_truoc, 0, '.', '.') . ' ' . '%' }}</td>
     </tr>
     <tr>
         <td>Thưởng đạt gốc tháng</td>
@@ -102,6 +110,10 @@
     <tr>
         <td>Sản lượng nhóm 4</td>
         <td>{{ number_format($san_luong_n4, 0, '.', '.') . ' ' . 'KG' }}</td>
+    </tr>
+    <tr>
+        <td>Sản lượng nhóm 5</td>
+        <td>{{ number_format($san_luong_n5, 0, '.', '.') . ' ' . 'KG' }}</td>
     </tr>
     <tr>
         <td>Thưởng đạt gốc quý</td>
@@ -128,6 +140,10 @@
         <td>{{ number_format($vuot_n4, 0, '.', '.') . ' ' . 'KG' }}</td>
     </tr>
     <tr>
+        <td>Vượt sản lượng nhóm 5</td>
+        <td>{{ number_format($vuot_n5, 0, '.', '.') . ' ' . 'KG' }}</td>
+    </tr>
+    <tr>
         <td>Thưởng vượt sản lượng</td>
         <td>{{ number_format($thuong_vuot, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
@@ -150,11 +166,11 @@
         <td>{{ number_format($thue_tncn, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Bảo hiểm xã hội</td>
+        <td>Bảo hiểm xã hội/BHYT</td>
         <td>{{ number_format($bhxh, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Kinh phí đào tạo</td>
+        <td>Công nợ NPP quá hạn/các khoản khác</td>
         <td>{{ number_format($giu_kp_dao_tao_cong_no_npp_qua_han, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>

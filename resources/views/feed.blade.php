@@ -26,14 +26,10 @@
 <p>
     Phòng Kế toán gửi Anh, Chị Bảng lương tháng {{date('m', strtotime('last month'))}} và thưởng sản lượng tháng {{date('m', strtotime('last month')) - 1}}.
 </p>
-<p style="text-indent: 2em">
-    -	Mọi thắc mắc về <strong>số liệu</strong> tính lương/thưởng Anh, Chị vui lòng phản hồi lại cho phòng Kế toán theo địa chỉ email: <strong>luong_cam@honghafeed.com.vn</strong>  (không trao đổi lương/thưởng qua điện thoại) trong <strong>năm (5) ngày làm việc</strong> kể từ khi nhận được cuống lương.
-</p>
-<p style="text-indent: 2em">
-    -	Phòng kế toán giải đáp thắc mắc của Anh, Chị trong vòng <strong>hai (2) ngày làm việc</strong> kể từ khi nhận được email phản hồi.
-</p>
-<p style="text-indent: 2em">
-    -	<strong>Quá thời gian 5 ngày làm việc</strong> nêu trên Phòng kế toán sẽ <strong>không trả lời</strong> bất cứ câu hỏi nào liên quan đến lương/thưởng của Anh, Chị!
+<p style="margin-left: 10px">
+    -	&emsp;Mọi thắc mắc về <strong>số liệu</strong> tính lương/thưởng Anh, Chị vui lòng phản hồi lại cho phòng Kế toán theo địa chỉ email: <strong>luong_cam@honghafeed.com.vn</strong>  (không trao đổi lương/thưởng qua điện thoại) trong <strong>năm (5) ngày làm việc</strong> kể từ khi nhận được cuống lương.<br>
+    -	&emsp;Phòng kế toán giải đáp thắc mắc của Anh, Chị trong vòng <strong>hai (2) ngày làm việc</strong> kể từ khi nhận được email phản hồi.<br>
+    -	&emsp;<strong>Quá thời gian 5 ngày làm việc</strong> nêu trên Phòng kế toán sẽ <strong>không trả lời</strong> bất cứ câu hỏi nào liên quan đến lương/thưởng của Anh, Chị!
 </p>
 <p>
     Những vướng mắc về <strong>chính sách lương</strong> Anh, Chị vui lòng liên hệ với <strong>Phòng hành chính</strong>.<br>

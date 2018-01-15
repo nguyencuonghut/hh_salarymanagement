@@ -80,7 +80,7 @@
         <td align="right">{{ number_format($dien_thoai, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Trả kinh phí đào tạo/Công nợ quá hạn NPP/Khác</td>
+        <td>Trả khoản giữ lại công nợ NPP quá hạn/ trả khác</td>
         <td align="right">{{ number_format($tra_kp_dao_tao_tra_giu_lai_thuong_sl_do_cong_no_npp_qua_han, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
@@ -185,7 +185,7 @@
         <td align="right">{{ number_format($bhxh, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Công nợ NPP quá hạn/các khoản khác</td>
+        <td>Giữ công nợ NPP quá hạn/các khoản khác</td>
         <td align="right">{{ number_format($giu_kp_dao_tao_cong_no_npp_qua_han, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>

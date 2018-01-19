@@ -25,6 +25,7 @@ class Medicine extends Model
                         'thue_tncn',
                         'bhxh',
                         'thu_kp_dao_tao',
+                        'tru_cong_tac_phi',
                         'giu_lai_luong',
                         'luong_con_linh',
                         'doanh_so_khoan_thang',

@@ -153,6 +153,10 @@
         <td>Giữ lại lương</td>
         <td>{{ number_format($giu_lai_luong, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
+    <tr>
+        <td>Trừ 30% công tác phí</td>
+        <td>{{ number_format($tru_cong_tac_phi, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+    </tr>
 
     <tr>
         <td><strong>IV. Lương còn lĩnh (1) + (2) - (3)</strong></td>

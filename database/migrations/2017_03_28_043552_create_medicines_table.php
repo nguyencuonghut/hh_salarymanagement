@@ -33,6 +33,7 @@ class CreateMedicinesTable extends Migration
             $table->bigInteger('thue_tncn');
             $table->bigInteger('bhxh');
             $table->bigInteger('thu_kp_dao_tao');
+            $table->bigInteger('tru_cong_tac_phi');
             $table->bigInteger('giu_lai_luong');
             $table->bigInteger('luong_con_linh');
             $table->bigInteger('doanh_so_khoan_thang');

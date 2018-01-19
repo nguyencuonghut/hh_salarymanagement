@@ -68,6 +68,7 @@ class MedicineController extends Controller
                 'thue_tncn' => $user->thue_tncn,
                 'bhxh' => $user->bhxh,
                 'thu_kp_dao_tao' => $user->thu_kp_dao_tao,
+                'tru_cong_tac_phi' => $user->tru_cong_tac_phi,
                 'giu_lai_luong' => $user->giu_lai_luong,
                 'luong_con_linh' => $user->luong_con_linh,
             );
@@ -128,6 +129,7 @@ class MedicineController extends Controller
                         'thue_tncn' => $value['thue_tncn'],
                         'bhxh' => $value['bhxh'],
                         'thu_kp_dao_tao' => $value['thu_kp_dao_tao'],
+                        'tru_cong_tac_phi' => $value['tru_cong_tac_phi'],
                         'giu_lai_luong' => $value['giu_lai_luong'],
                         'luong_con_linh' => $value['luong_con_linh'],
                         'doanh_so_khoan_thang' => $value['doanh_so_khoan_thang'],

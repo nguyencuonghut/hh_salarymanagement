@@ -73,9 +73,12 @@ class FeedController extends Controller
                 'vuot_n4' => $user->vuot_n4,
                 'vuot_n5' => $user->vuot_n5,
                 'thuong_vuot' => $user->thuong_vuot,
-                'quyet_toan_quy' => $user->quyet_toan_quy,
+                'thuong_mo_dai_ly_moi' => $user->thuong_mo_dai_ly_moi, // 11-2-2018
+                'quyet_toan_thuong_vuot' => $user->quyet_toan_thuong_vuot, // 11-2-2018
+                'thuong_quy' => $user->thuong_quy, // 11-2-2018
+                'truy_thu_truy_linh' => $user->truy_thu_truy_linh, // 11-2-2018
+                'thuong_khac' => $user->thuong_khac, // 11-2-2018
                 'ho_tro_hoac_tru_thuong_sl' => $user->ho_tro_hoac_tru_thuong_sl,
-                'thuong_dat_goc_quy' => $user->thuong_dat_goc_quy,
                 'cac_khoan_giam_tru' => $user->cac_khoan_giam_tru,
                 'thue_tncn' => $user->thue_tncn,
                 'bhxh' => $user->bhxh,
@@ -163,14 +166,14 @@ class FeedController extends Controller
                         'ngay_cong_quy_dinh' => $value['ngay_cong_quy_dinh'],
                         'ngay_cong_thuc_te' => $value['ngay_cong_thuc_te'],
                         'ngay_cong_tac_phi' => $value['ngay_cong_tac_phi'],
-                        'luong_va_phu_cap' => $value['luong_va_phu_cap_(1)'],
+                        'luong_va_phu_cap' => $value['luong_va_phu_cap'],
                         'luong_thuc_te' => $value['luong_thuc_te'],
                         'cong_tac_phi' => $value['cong_tac_phi'],
                         'phu_cap' => $value['phu_cap'],
                         'dien_thoai' => $value['dien_thoai'],
                         'tra_kp_dao_tao_tra_giu_lai_thuong_sl_do_cong_no_npp_qua_han' => $value['tra_kp_dao_tao_tra_giu_lai_thuong_sl_do_cong_no_npp_qua_han'],
                         'ho_tro_tru_khac' => $value['ho_tro_tru_khac'],
-                        'thuong_san_luong' => $value['thuong_san_luong_(2)'],
+                        'thuong_san_luong' => $value['thuong_san_luong'],
                         'san_luong_goc' => $value['san_luong_goc'],
                         'san_luong_thuc_hien' => $value['san_luong_thuc_hien'],
                         'ty_le_gia_cam_de_thang_nay' => $value['ty_le_gia_cam_de_thang_nay'],
@@ -188,15 +191,18 @@ class FeedController extends Controller
                         'vuot_n4' => $value['vuot_n4'],
                         'vuot_n5' => $value['vuot_n5'],
                         'thuong_vuot' => $value['thuong_vuot'],
-                        'quyet_toan_quy' => $value['quyet_toan_quy'],
+                        'thuong_mo_dai_ly_moi' => $value['thuong_mo_dai_ly_moi'], // 11-2-2018
+                        'quyet_toan_thuong_vuot' => $value['quyet_toan_thuong_vuot'], // 11-2-2018
+                        'thuong_quy' => $value['thuong_quy'], // 11-2-2018
+                        'truy_thu_truy_linh' => $value['truy_thu_truy_linh'], // 11-2-2018
+                        'thuong_khac' => $value['thuong_khac'], // 11-2-2018
                         'ho_tro_hoac_tru_thuong_sl' => $value['ho_tro_hoac_tru_thuong_sl'],
-                        'thuong_dat_goc_quy' => $value['thuong_dat_goc_quy'],
-                        'cac_khoan_giam_tru' => $value['cac_khoan_giam_tru_(3)'],
+                        'cac_khoan_giam_tru' => $value['cac_khoan_giam_tru'],
                         'giu_kp_dao_tao_cong_no_npp_qua_han' => $value['giu_kp_dao_tao_cong_no_npp_qua_han'],
                         'thue_tncn' => $value['thue_tncn'],
                         'bhxh' => $value['bhxh'],
-                        'giu_lai_luong' => $value['giu_lai_luong_(4)'],
-                        'luong_con_linh' => $value['luong_con_linh_(1+2_3_4)'],
+                        'giu_lai_luong' => $value['giu_lai_luong'],
+                        'luong_con_linh' => $value['luong_con_linh'],
                     ];
                 }
 

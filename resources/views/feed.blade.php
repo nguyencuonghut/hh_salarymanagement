@@ -163,12 +163,24 @@
         <td align="right">{{ number_format($thuong_vuot, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Quyết toán quý</td>
-        <td align="right">{{ number_format($quyet_toan_quy, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+        <td>Thưởng mở đại lý mới</td>
+        <td align="right">{{ number_format($thuong_mo_dai_ly_moi, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Hỗ trợ hoặc trừ</td>
-        <td align="right">{{ number_format($ho_tro_hoac_tru_thuong_sl, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+        <td>Quyết toán thưởng vượt quý IV.2017</td>
+        <td align="right">{{ number_format($quyet_toan_thuong_vuot, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+    </tr>
+    <tr>
+        <td>Thưởng quý</td>
+        <td align="right">{{ number_format($thuong_quy, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+    </tr>
+    <tr>
+        <td>Truy thu/truy lĩnh thưởng tháng 10, 11 do thay đổi cách tính lương NVKD có BĐN riêng</td>
+        <td align="right">{{ number_format($truy_thu_truy_linh, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+    </tr>
+    <tr>
+        <td>Thưởng/trừ thưởng khác (hỗ trợ theo thư mời, trại KAC quy IV.2017,...)</td>
+        <td align="right">{{ number_format($thuong_khac, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
 
 

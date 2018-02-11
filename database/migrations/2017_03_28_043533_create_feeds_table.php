@@ -46,9 +46,12 @@ class CreateFeedsTable extends Migration
             $table->bigInteger('vuot_n4');
             $table->bigInteger('vuot_n5');
             $table->bigInteger('thuong_vuot');
-            $table->bigInteger('quyet_toan_quy');
+            $table->bigInteger('thuong_mo_dai_ly_moi'); // 11-2-2018
+            $table->bigInteger('quyet_toan_thuong_vuot'); // 11-2-2018
+            $table->bigInteger('thuong_quy'); // 11-2-2018
+            $table->bigInteger('truy_thu_truy_linh'); // 11-2-2018
+            $table->bigInteger('thuong_khac'); // 11-2-2018
             $table->bigInteger('ho_tro_hoac_tru_thuong_sl');
-            $table->bigInteger('thuong_dat_goc_quy');
             $table->bigInteger('cac_khoan_giam_tru');
             $table->bigInteger('giu_kp_dao_tao_cong_no_npp_qua_han');
             $table->bigInteger('thue_tncn');

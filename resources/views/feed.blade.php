@@ -24,7 +24,7 @@
     K/g Anh, Chị,
 </p>
 <p>
-    Phòng Kế toán gửi Anh, Chị Bảng lương tháng {{date('m', strtotime('last month'))}} và thưởng sản lượng tháng {{date('m', strtotime('last month')) - 1}}.
+    Phòng Kế toán gửi Anh, Chị Bảng lương tháng {{date('m', strtotime('last month'))}} và thưởng sản lượng tháng {{date('m', strtotime('-2 month'))}}.
 </p>
 <p style="margin-left: 10px">
     -	&emsp;Mọi thắc mắc về <strong>số liệu</strong> tính lương/thưởng Anh, Chị vui lòng phản hồi lại cho phòng Kế toán theo địa chỉ email: <strong>luong_cam@honghafeed.com.vn</strong>  (không trao đổi lương/thưởng qua điện thoại) trong <strong>năm (5) ngày làm việc</strong> kể từ khi nhận được cuống lương.<br>

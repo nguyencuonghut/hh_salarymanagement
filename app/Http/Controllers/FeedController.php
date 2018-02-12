@@ -77,7 +77,6 @@ class FeedController extends Controller
                 'quyet_toan_thuong_vuot' => $user->quyet_toan_thuong_vuot, // 11-2-2018
                 'thuong_quy' => $user->thuong_quy, // 11-2-2018
                 'truy_thu_truy_linh' => $user->truy_thu_truy_linh, // 11-2-2018
-                'thuong_khac' => $user->thuong_khac, // 11-2-2018
                 'ho_tro_hoac_tru_thuong_sl' => $user->ho_tro_hoac_tru_thuong_sl,
                 'cac_khoan_giam_tru' => $user->cac_khoan_giam_tru,
                 'thue_tncn' => $user->thue_tncn,
@@ -195,7 +194,6 @@ class FeedController extends Controller
                         'quyet_toan_thuong_vuot' => $value['quyet_toan_thuong_vuot'], // 11-2-2018
                         'thuong_quy' => $value['thuong_quy'], // 11-2-2018
                         'truy_thu_truy_linh' => $value['truy_thu_truy_linh'], // 11-2-2018
-                        'thuong_khac' => $value['thuong_khac'], // 11-2-2018
                         'ho_tro_hoac_tru_thuong_sl' => $value['ho_tro_hoac_tru_thuong_sl'],
                         'cac_khoan_giam_tru' => $value['cac_khoan_giam_tru'],
                         'giu_kp_dao_tao_cong_no_npp_qua_han' => $value['giu_kp_dao_tao_cong_no_npp_qua_han'],

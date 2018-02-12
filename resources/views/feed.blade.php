@@ -13,7 +13,7 @@
 
     table {
         border-collapse: collapse;
-        width: 500px;
+        width: 700px;
     }
 
     th {
@@ -180,7 +180,7 @@
     </tr>
     <tr>
         <td>Thưởng/trừ thưởng khác (hỗ trợ theo thư mời, trại KAC quy IV.2017,...)</td>
-        <td align="right">{{ number_format($thuong_khac, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+        <td align="right">{{ number_format($ho_tro_hoac_tru_thuong_sl, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
 
 

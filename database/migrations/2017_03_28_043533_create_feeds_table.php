@@ -50,7 +50,6 @@ class CreateFeedsTable extends Migration
             $table->bigInteger('quyet_toan_thuong_vuot'); // 11-2-2018
             $table->bigInteger('thuong_quy'); // 11-2-2018
             $table->bigInteger('truy_thu_truy_linh'); // 11-2-2018
-            $table->bigInteger('thuong_khac'); // 11-2-2018
             $table->bigInteger('ho_tro_hoac_tru_thuong_sl');
             $table->bigInteger('cac_khoan_giam_tru');
             $table->bigInteger('giu_kp_dao_tao_cong_no_npp_qua_han');

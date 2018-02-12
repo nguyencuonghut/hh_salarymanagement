@@ -42,7 +42,6 @@ class Feed extends Model
                         'quyet_toan_thuong_vuot', // 11-2-2018
                         'thuong_quy', // 11-2-2018
                         'truy_thu_truy_linh', // 11-2-2018
-                        'thuong_khac', // 11-2-2018
                         'ho_tro_hoac_tru_thuong_sl',
                         'cac_khoan_giam_tru',
                         'giu_kp_dao_tao_cong_no_npp_qua_han',

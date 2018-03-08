@@ -140,7 +140,7 @@
     </tr>
     <tr>
         <td><strong>Thưởng IOMC</strong></td>
-        <td align="right">{{ number_format($thuong_iomc, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+        <td align="right"><strong>{{ number_format($thuong_iomc, 0, '.', '.') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
     <tr>
         <td style="text-indent: 2em"><i>Vượt sản lượng nhóm 1</i></td>
@@ -198,7 +198,7 @@
     </tr>
     <tr bgcolor="yellow">
         <td><strong>IV. Giữ lại lương (4)</strong></td>
-        <td align="right">{{ number_format($giu_lai_luong, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+        <td align="right"><strong>{{ number_format($giu_lai_luong, 0, '.', '.') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
 
     <tr bgcolor="yellow">

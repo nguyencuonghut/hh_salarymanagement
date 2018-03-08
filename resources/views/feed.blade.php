@@ -111,6 +111,10 @@
         <td align="right">{{ number_format($ty_le_gia_cam_de_thang_truoc, 2, '.', '.') . ' ' . '%' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
+        <td style="text-indent: 2em"><i>Ngân sách sử dụng</i></td>
+        <td align="right">{{ number_format($ngan_sach, 2, '.', '.') . ' ' . 'đ/kg' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
         <td style="text-indent: 2em"><i>Tỷ lệ hoàn thành mở trại Key Account</i></td>
         <td align="right">{{ number_format($ty_le_mo_trai_KEY, 2, '.', '.') . ' ' . '%' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
@@ -119,7 +123,7 @@
         <td align="right">{{ number_format($ty_le_xay_dung_trai_KEY, 2, '.', '.') . ' ' . '%' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
-        <td><b>Thưởng đạt gốc tháng (tạm ứng 70% tháng)</b></td>
+        <td><b>Thưởng đạt kế hoạch tháng (tạm ứng 70% tháng)</b></td>
         <td align="right"><b>{{ number_format($tien_thuong_dat_goc, 0, '.', '.') . ' ' . 'VNĐ' }}</b></td>
     </tr>
     <tr>

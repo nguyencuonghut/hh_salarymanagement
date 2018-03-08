@@ -25,6 +25,7 @@ class Feed extends Model
                         'san_luong_thuc_hien',
                         'ty_le_gia_cam_de_thang_nay',
                         'ty_le_gia_cam_de_thang_trươc',
+                        'ngan_sach',
                         'ty_le_mo_trai_KEY',
                         'ty_le_xay_dung_trai_KEY',
                         'tien_thuong_dat_goc',

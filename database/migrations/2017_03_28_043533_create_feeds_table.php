@@ -33,6 +33,7 @@ class CreateFeedsTable extends Migration
             $table->bigInteger('san_luong_thuc_hien');
             $table->float('ty_le_gia_cam_de_thang_nay');
             $table->float('ty_le_gia_cam_de_thang_truoc');
+            $table->float('ngan_sach');
             $table->float('ty_le_mo_trai_KEY');
             $table->float('ty_le_xay_dung_trai_KEY');
             $table->bigInteger('tien_thuong_dat_goc');

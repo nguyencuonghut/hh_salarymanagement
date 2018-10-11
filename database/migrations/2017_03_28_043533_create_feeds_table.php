@@ -33,21 +33,27 @@ class CreateFeedsTable extends Migration
             $table->bigInteger('san_luong_thuc_hien');
             $table->float('ty_le_gia_cam_de_thang_nay');
             $table->float('ty_le_gia_cam_de_thang_truoc');
+            $table->float('tang_giam_ty_le_dong_thit');
             $table->float('ngan_sach');
+            /*
             $table->float('ty_le_mo_trai_KEY');
             $table->float('ty_le_xay_dung_trai_KEY');
+            */
             $table->bigInteger('tien_thuong_dat_goc');
             $table->bigInteger('san_luong_n1');
             $table->bigInteger('san_luong_n2');
             $table->bigInteger('san_luong_n3');
             $table->bigInteger('thuong_iomc');
+            /*
             $table->bigInteger('vuot_n1');
             $table->bigInteger('vuot_n2');
             $table->bigInteger('vuot_n3');
             $table->bigInteger('thuong_vuot');
             $table->bigInteger('thuong_mo_dai_ly_moi'); // 11-2-2018
+            */
             $table->bigInteger('thuong_quy'); // 11-2-2018
             $table->bigInteger('truy_thu_truy_linh_thuong_dat');
+            $table->bigInteger('thuong_vuot_quy');
             $table->bigInteger('thuong_khac');
             $table->bigInteger('tru_thuong');
             $table->bigInteger('cac_khoan_giam_tru');

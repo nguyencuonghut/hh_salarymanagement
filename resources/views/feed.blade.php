@@ -111,16 +111,12 @@
         <td align="right">{{ number_format($ty_le_gia_cam_de_thang_truoc, 2, '.', '.') . ' ' . '%' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
+        <td style="text-indent: 2em"><i>Tăng/giảm tổng SL dòng thịt so với tháng trước</i></td>
+        <td align="right">{{ number_format($tang_giam_ty_le_dong_thit, 2, '.', '.') . ' ' . '%' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
         <td style="text-indent: 2em"><i>Ngân sách sử dụng</i></td>
         <td align="right">{{ number_format($ngan_sach, 2, '.', '.') . ' ' . 'đ/kg' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-indent: 2em"><i>Tỷ lệ hoàn thành mở trại Key Account</i></td>
-        <td align="right">{{ number_format($ty_le_mo_trai_KEY, 2, '.', '.') . ' ' . '%' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-indent: 2em"><i>Tỷ lệ hoàn thành xây dựng trại Key Account</i></td>
-        <td align="right">{{ number_format($ty_le_xay_dung_trai_KEY, 2, '.', '.') . ' ' . '%' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
         <td><b>Thưởng đạt kế hoạch tháng (tạm ứng 70% tháng)</b></td>
@@ -143,26 +139,6 @@
         <td align="right"><strong>{{ number_format($thuong_iomc, 0, '.', '.') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
     <tr>
-        <td style="text-indent: 2em"><i>Vượt sản lượng nhóm 1</i></td>
-        <td align="right">{{ number_format($vuot_n1, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-indent: 2em"><i>Vượt sản lượng nhóm 2</i></td>
-        <td align="right">{{ number_format($vuot_n2, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-indent: 2em"><i>Vượt sản lượng nhóm 3</i></td>
-        <td align="right">{{ number_format($vuot_n3, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    </tr>
-    <tr>
-        <td><b>Thưởng vượt sản lượng</b></td>
-        <td align="right"><b>{{ number_format($thuong_vuot, 0, '.', '.') . ' ' . 'VNĐ' }}</b></td>
-    </tr>
-    <tr>
-        <td>Thưởng mở đại lý mới</td>
-        <td align="right">{{ number_format($thuong_mo_dai_ly_moi, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
-    </tr>
-    <tr>
         <td>Thưởng quý</td>
         <td align="right">{{ number_format($thuong_quy, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
@@ -171,7 +147,11 @@
         <td align="right">{{ number_format($truy_thu_truy_linh_thuong_dat, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Thưởng khác</td>
+        <td>Thưởng vượt sản lượng Quý</td>
+        <td align="right">{{ number_format($thuong_vuot_quy, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+    </tr>
+    <tr>
+        <td>Truy thu/Truy lĩnh thưởng vượt Quý I, II/2018</td>
         <td align="right">{{ number_format($thuong_khac, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>

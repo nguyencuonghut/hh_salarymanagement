@@ -147,11 +147,11 @@
         <td align="right">{{ number_format($truy_thu_truy_linh_thuong_dat, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Thưởng vượt sản lượng Quý</td>
+        <td>Thưởng vượt sản lượng Quý và thưởng vượt 1130S, 2100</td>
         <td align="right">{{ number_format($thuong_vuot_quy, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Truy thu/Truy lĩnh thưởng vượt Quý I, II/2018</td>
+        <td>Truy thu/Truy lĩnh thưởng vượt Quý I, II/2018 và tiền lì xì Tết 2019</td>
         <td align="right">{{ number_format($thuong_khac, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
@@ -173,7 +173,7 @@
         <td align="right">{{ number_format($bhxh, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Giữ công nợ NPP quá hạn/các khoản khác</td>
+        <td>Trừ tạm ứng lương tháng 01/2019 và giữ công nợ quá hạn NPP</td>
         <td align="right">{{ number_format($giu_kp_dao_tao_cong_no_npp_qua_han, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr bgcolor="yellow">

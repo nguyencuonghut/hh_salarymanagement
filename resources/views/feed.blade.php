@@ -115,7 +115,7 @@
         <td align="right">{{ number_format($ngan_sach, 2, '.', '.') . ' ' . 'đ/kg' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
-        <td><b>Thưởng đạt kế hoạch tháng (tạm ứng 70% tháng)</b></td>
+        <td><b>Thưởng đạt kế hoạch tháng (tạm ứng 70%)</b></td>
         <td align="right"><b>{{ number_format($tien_thuong_dat_goc, 0, '.', '.') . ' ' . 'VNĐ' }}</b></td>
     </tr>
     <tr>
@@ -147,11 +147,11 @@
         <td align="right">{{ number_format($truy_thu_truy_linh_thuong_dat, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Thưởng vượt sản lượng Quý và thưởng vượt 1130S, 2100</td>
+        <td>Thưởng vượt gốc</td>
         <td align="right">{{ number_format($thuong_vuot_quy, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Truy thu/Truy lĩnh thưởng vượt Quý I, II/2018 và tiền lì xì Tết 2019</td>
+        <td>Thưởng khác</td>
         <td align="right">{{ number_format($thuong_khac, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>

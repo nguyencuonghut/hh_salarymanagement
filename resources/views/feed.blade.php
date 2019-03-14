@@ -81,7 +81,7 @@
     </tr>
     <tr>
         <td>Trả khoản giữ lại công nợ NPP quá hạn/ trả khác</td>
-        <td align="right">{{ number_format($tra_giu_lai_thuong_sl_do_cong_no_npp_qua_han, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+        <td align="right">{{ number_format($tra_giu_qua_han_npp, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
         <td>Hỗ trợ/trừ khác</td>
@@ -95,24 +95,20 @@
         <td align="right"><strong>{{ number_format($thuong_san_luong, 0, '.', '.') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
     <tr>
-        <td style="text-indent: 2em"><i>Sản lượng kế hoạch</i></td>
+        <td style="text-indent: 2em"><i>Kế hoạch tổng sản lượng</i></td>
         <td align="right">{{ number_format($san_luong_ke_hoach, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
-        <td style="text-indent: 2em"><i>Sản lượng thực hiện</i></td>
+        <td style="text-indent: 2em"><i>Kế hoạch dòng thịt</i></td>
+        <td align="right">{{ number_format($san_luong_ke_hoach_dong_thit, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="text-indent: 2em"><i>Thực hiện tổng sản lượng</i></td>
         <td align="right">{{ number_format($san_luong_thuc_hien, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
-        <td style="text-indent: 2em"><i>Tỷ lệ gia cầm đẻ tháng này</i></td>
-        <td align="right">{{ number_format($ty_le_gia_cam_de_thang_nay, 2, '.', '.') . ' ' . '%' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-indent: 2em"><i>Tỷ lệ gia cầm đẻ tháng trước</i></td>
-        <td align="right">{{ number_format($ty_le_gia_cam_de_thang_truoc, 2, '.', '.') . ' ' . '%' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-indent: 2em"><i>Tăng/giảm tổng SL dòng thịt so với tháng trước</i></td>
-        <td align="right">{{ number_format($tang_giam_ty_le_dong_thit, 2, '.', '.') . ' ' . '%' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="text-indent: 2em"><i>Thực hiện dòng thịt</i></td>
+        <td align="right">{{ number_format($san_luong_thuc_hien_dong_thit, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
         <td style="text-indent: 2em"><i>Ngân sách sử dụng</i></td>
@@ -133,6 +129,10 @@
     <tr>
         <td style="text-indent: 2em"><i>Sản lượng nhóm 3</i></td>
         <td align="right">{{ number_format($san_luong_n3, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="text-indent: 2em"><i>Sản lượng nhóm 4</i></td>
+        <td align="right">{{ number_format($san_luong_n4, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
         <td><strong>Thưởng IOMC</strong></td>
@@ -173,8 +173,8 @@
         <td align="right">{{ number_format($bhxh, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
-        <td>Trừ tạm ứng lương tháng 01/2019 và giữ công nợ quá hạn NPP</td>
-        <td align="right">{{ number_format($giu_kp_dao_tao_cong_no_npp_qua_han, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+        <td>Giữ lại công nợ NPP quá hạn hoặc giảm trừ khác</td>
+        <td align="right">{{ number_format($giu_cong_no_qua_han_npp, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr bgcolor="yellow">
         <td><strong>IV. Giữ lại lương (4)</strong></td>

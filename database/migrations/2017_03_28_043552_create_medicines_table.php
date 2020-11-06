@@ -26,25 +26,29 @@ class CreateMedicinesTable extends Migration
             $table->bigInteger('tien_cong_tac_phi');
             $table->bigInteger('phu_cap');
             $table->bigInteger('dien_thoai_cong_tru');
-            $table->bigInteger('tra_kp_dao_tao');
+            //$table->bigInteger('tra_kp_dao_tao'); //Remove by TrangNT
             $table->bigInteger('thuong_kpi');
             $table->bigInteger('ho_tro_hoac_tru_luong_phu_cap');
             $table->bigInteger('cac_khoan_giam_tru');
             $table->bigInteger('thue_tncn');
             $table->bigInteger('bhxh');
-            $table->bigInteger('thu_kp_dao_tao');
-            $table->bigInteger('tru_cong_tac_phi');
+            //$table->bigInteger('thu_kp_dao_tao'); //Remove by TrangNT
+            //$table->bigInteger('tru_cong_tac_phi'); //Remove by TrangNT
             $table->bigInteger('giu_lai_luong');
             $table->bigInteger('luong_con_linh');
             $table->bigInteger('doanh_so_khoan_thang');
+            $table->bigInteger('doanh_so_goc_thang');//New by TrangNT
             $table->bigInteger('doanh_so_thuc_hien_thang');
-            $table->bigInteger('thuong_ds_thang');
-            $table->bigInteger('doanh_so_thuc_hien_den_ngay_20');
-            $table->bigInteger('thuong_them_20_phan_tram');
+            //$table->bigInteger('thuong_ds_thang'); //Remove by TrangNT
+            //$table->bigInteger('doanh_so_thuc_hien_den_ngay_20'); //Remove by TrangNT
+            //$table->bigInteger('thuong_them_20_phan_tram'); //Remove by TrangNT
             $table->bigInteger('doanh_so_khoan_quy');
-            $table->bigInteger('doanh_so_quy_goc_2016');
+            //$table->bigInteger('doanh_so_quy_goc_2016'); //Remove by TrangNT
+            $table->bigInteger('doanh_so_quy_goc_2019'); // New by TrangNT
             $table->bigInteger('doanh_so_thuc_hien_quy');
             $table->bigInteger('thuong_vuot_doanh_so_quy');
+            $table->bigInteger('thuong_vuot_goc_doanh_so_quy'); //New by TrangNT
+            $table->bigInteger('thuong_thi_dua'); // New by TrangNT
             $table->bigInteger('doanh_so_khoan_nam');
             $table->bigInteger('doanh_so_thuc_hien_nam');
             $table->bigInteger('thuong_doanh_so_nam');

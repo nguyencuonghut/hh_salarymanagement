@@ -33,6 +33,19 @@ class FeedController extends Controller
      */
     public function sendfeedmail(Request $request, $type)
     {
+		// Setup your luong_cam@honghafeed mailer
+		$transport = Swift_SmtpTransport::newInstance(env('MAIL_HOST'), env('MAIL_PORT'), env('MAIL_ENCRYPTION'));
+		$transport->setUsername('luong_cam@honghafeed.com.vn');
+		$transport->setPassword('Hongha@123');
+
+		$feed_mailer = new Swift_Mailer($transport);
+		//dd($feed_mailer);
+		// Set the mailer as feed_mailer
+		Mail::setSwiftMailer($feed_mailer);
+
+		
+		
+		
         /* Get email address from database */
         //$users = Feed::where('email', '!=', '')->get();
 		$users = Feed::where('email', '!=', '')->get();

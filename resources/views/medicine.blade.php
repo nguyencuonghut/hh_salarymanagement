@@ -60,10 +60,7 @@
         <td>Tiền điện thoại cộng/trừ</td>
         <td>{{ number_format($dien_thoai_cong_tru, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
-    <tr>
-        <td>Trả Kinh phí đào tạo</td>
-        <td>{{ number_format($tra_kp_dao_tao, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
-    </tr>
+
     <tr>
         <td>Thưởng KPI</td>
         <td>{{ number_format($thuong_kpi, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
@@ -84,28 +81,22 @@
         <td>{{ number_format($doanh_so_khoan_thang, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
+        <td>Doanh số gốc tháng của năm 2019</td>
+        <td>{{ number_format($doanh_so_goc_thang, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+    </tr>
+    <tr>
         <td>Doanh số thực hiện tháng</td>
         <td>{{ number_format($doanh_so_thuc_hien_thang, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
-    <tr>
-        <td>Thưởng doanh số tháng</td>
-        <td>{{ number_format($thuong_ds_thang, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
-    </tr>
-    <tr>
-        <td>Doanh số thực hiện đến ngày 20</td>
-        <td>{{ number_format($doanh_so_thuc_hien_den_ngay_20, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
-    </tr>
-    <tr>
-        <td>Thưởng thêm 20%</td>
-        <td>{{ number_format($thuong_them_20_phan_tram, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
-    </tr>
+
     <tr>
         <td>Doanh số khoán Quý</td>
         <td>{{ number_format($doanh_so_khoan_quy, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
+
     <tr>
-        <td>Doanh số Quý gốc 2016</td>
-        <td>{{ number_format($doanh_so_quy_goc_2016, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+        <td>Doanh số gốc quý của năm 2019</td>
+        <td>{{ number_format($doanh_so_quy_goc_2019, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
         <td>Doanh số thực hiện Quý</td>
@@ -114,6 +105,14 @@
     <tr>
         <td>Thưởng vượt doanh số Quý</td>
         <td>{{ number_format($thuong_vuot_doanh_so_quy, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+    </tr>
+    <tr>
+        <td>Thưởng vượt gốc doanh số Quý</td>
+        <td>{{ number_format($thuong_vuot_goc_doanh_so_quy, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
+    </tr>
+    <tr>
+        <td>Thưởng thi đua</td>
+        <td>{{ number_format($thuong_thi_dua, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
         <td>Doanh số khoán Năm</td>
@@ -145,17 +144,10 @@
         <td>Bảo hiểm xã hội</td>
         <td>{{ number_format($bhxh, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
-    <tr>
-        <td>Kinh phí đào tạo</td>
-        <td>{{ number_format($thu_kp_dao_tao, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
-    </tr>
+
     <tr>
         <td>Giữ lại lương</td>
         <td>{{ number_format($giu_lai_luong, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
-    </tr>
-    <tr>
-        <td>Trừ 30% công tác phí</td>
-        <td>{{ number_format($tru_cong_tac_phi, 0, '.', '.') . ' ' . 'VNĐ' }}</td>
     </tr>
 
     <tr>

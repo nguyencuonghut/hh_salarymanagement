@@ -20,3 +20,8 @@ Route::post('importExcelFeed', 'FeedController@importExcelFeed');
 Route::get('/medicine', 'MedicineController@importExport');
 Route::get('sendmedicinemail/{type}', 'MedicineController@sendmedicinemail');
 Route::post('importExcelMedicine', 'MedicineController@importExcelMedicine');
+
+
+Route::get('/factory', 'FactoryController@importExport');
+Route::get('sendfactorymail/{type}', 'FactoryController@sendfactorymail');
+Route::post('importExcelFactory', 'FactoryController@importExcelFactory');

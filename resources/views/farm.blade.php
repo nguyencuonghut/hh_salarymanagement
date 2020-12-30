@@ -62,7 +62,7 @@
     </tr>
     <tr bgcolor="yellow">
         <td><strong>Lương thỏa thuận (Lương chính + phụ cấp)</strong></td>
-        <td align="right"><strong>{{ number_format($tong_luong_thoa_thuan, 0, ',', ',') }}</strong></td>
+        <td align="right"><strong>{{ number_format($tong_luong_thoa_thuan, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
     <tr>
         <td >Ngày công chuẩn</td>

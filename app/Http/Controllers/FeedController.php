@@ -78,7 +78,8 @@ class FeedController extends Controller
                 'ty_le_gia_cam_de_thang_truoc' => $user->ty_le_gia_cam_de_thang_truoc,
                 'tang_giam_ty_le_dong_thit' => $user->tang_giam_ty_le_dong_thit,
                 */
-                'ngan_sach' => $user->ngan_sach,
+                'ngan_sach_su_dung' => $user->ngan_sach_su_dung,
+                'ngan_sach_cho_phep' => $user->ngan_sach_cho_phep,
                 /*
                 'ty_le_mo_trai_KEY' => $user->ty_le_mo_trai_KEY,
                 'ty_le_xay_dung_trai_KEY' => $user->ty_le_xay_dung_trai_KEY,
@@ -87,7 +88,9 @@ class FeedController extends Controller
                 'san_luong_n1' => $user->san_luong_n1,
                 'san_luong_n2' => $user->san_luong_n2,
                 'san_luong_n3' => $user->san_luong_n3,
+                /*
                 'san_luong_n4' => $user->san_luong_n4,
+                */
                 'thuong_iomc' => $user->thuong_iomc,
                 /*
                 'vuot_n1' => $user->vuot_n1,
@@ -200,12 +203,15 @@ class FeedController extends Controller
                         'san_luong_ke_hoach_dong_thit' => $value['san_luong_ke_hoach_dong_thit'],//Add new 2019
                         'san_luong_thuc_hien' => $value['san_luong_thuc_hien'],
                         'san_luong_thuc_hien_dong_thit' => $value['san_luong_thuc_hien_dong_thit'],//Add new 2019
-                        'ngan_sach' => $value['ngan_sach'],
+                        'ngan_sach_su_dung' => $value['ngan_sach_su_dung'],
+                        'ngan_sach_cho_phep' => $value['ngan_sach_cho_phep'],
                         'tien_thuong_dat_goc' => $value['tien_thuong_dat_goc'],
                         'san_luong_n1' => $value['san_luong_n1'],
                         'san_luong_n2' => $value['san_luong_n2'],
                         'san_luong_n3' => $value['san_luong_n3'],
+                        /*
                         'san_luong_n4' => $value['san_luong_n4'],//Add new 2019
+                        */
                         'thuong_iomc' => $value['thuong_iomc'],
                         /*
                         'ty_le_gia_cam_de_thang_nay' => $value['ty_le_gia_cam_de_thang_nay'],

@@ -38,7 +38,8 @@ class CreateFeedsTable extends Migration
             $table->float('ty_le_gia_cam_de_thang_truoc');
             $table->float('tang_giam_ty_le_dong_thit');
             */
-            $table->float('ngan_sach');
+            $table->float('ngan_sach_su_dung');
+            $table->float('ngan_sach_cho_phep');
             /*
             $table->float('ty_le_mo_trai_KEY');
             $table->float('ty_le_xay_dung_trai_KEY');
@@ -47,7 +48,9 @@ class CreateFeedsTable extends Migration
             $table->bigInteger('san_luong_n1');
             $table->bigInteger('san_luong_n2');
             $table->bigInteger('san_luong_n3');
+            /*
             $table->bigInteger('san_luong_n4');// Add new 2019
+            */
             $table->bigInteger('thuong_iomc');
             /*
             $table->bigInteger('vuot_n1');

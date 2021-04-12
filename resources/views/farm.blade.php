@@ -53,18 +53,6 @@
         <td align="right">{{ $bo_phan }}</td>
     </tr>
     <tr>
-        <td>Ngày vào làm</td>
-        <td align="right">{{ $ngay_vao }}</td>
-    </tr>
-    <tr>
-        <td >Ngày ký HĐLĐ</td>
-        <td align="right">{{ $ngay_ky_hop_dong }}</td>
-    </tr>
-    <tr bgcolor="yellow">
-        <td><strong>Lương thỏa thuận (Lương chính + phụ cấp)</strong></td>
-        <td align="right"><strong>{{ number_format($tong_luong_thoa_thuan, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
-    </tr>
-    <tr>
         <td >Ngày công chuẩn</td>
         <td align="right">26 ngày</td>
     </tr>
@@ -80,29 +68,39 @@
         <td >Nghỉ lễ</td>
         <td align="right">{{ $nghi_le }} ngày</td>
     </tr>
-    <tr>
-        <td >Tổng công</td>
-        <td align="right">{{ $tong_cong }} ngày</td>
-    </tr>
     <tr bgcolor="yellow">
         <td><strong>Lương chính (1)</strong></td>
-        <td align="right"><strong>{{ number_format($tong_luong_chinh, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
+        <td align="right"><strong>{{ number_format($tong_luong_chinh + $thuong_kpi_thuc_te + $tien_thuong_nang_suat, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
+    <tr>
+        <td>Lương ngày công</td>
+        <td align="right">{{ number_format($tong_luong_chinh, 0, ',', ',') . ' ' . 'VNĐ' }}</td>
+    </tr>
+    <tr>
+        <td>Thưởng KPI thực tế</td>
+        <td align="right">{{ number_format($thuong_kpi_thuc_te, 0, ',', ',') . ' ' . 'VNĐ' }}</td>
+    </tr>
+    <tr>
+        <td>Thưởng năng suất</td>
+        <td align="right">{{ number_format($tien_thuong_nang_suat, 0, ',', ',') . ' ' . 'VNĐ' }}</td>
+    </tr>
+    
     <tr bgcolor="yellow">
-        <td><strong>Tổng phụ cấp (2)</strong></td>
+        <td><strong>Phụ cấp (2)</strong></td>
         <td align="right"><strong>{{ number_format($tong_phu_cap_tro_cap, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
+    
     <tr bgcolor="yellow">
         <td><strong>Lương tăng ca (3)</strong></td>
         <td align="right"><strong>{{ number_format($tong_tien_tang_ca, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
     <tr>
-        <td>Thời gian tăng ca</td>
+        <td >Thời gian tăng ca</td>
         <td align="right">{{ $tong_gio_tang_ca }} giờ</td>
     </tr>
     <tr>
         <td>Tổng tiền tăng ca</td>
-        <td align="right">{{ number_format($tong_tien_tang_ca, 0, ',', ',') . ' ' . 'VNĐ' }}</td>
+        <td align="right">{{ number_format($tong_tien_tang_ca, 0, ',', ',') . ' ' . 'VNĐ' }}    </td>
     </tr>
     <tr bgcolor="yellow">
         <td><strong>Hỗ trợ/trừ khác (4)</strong></td>

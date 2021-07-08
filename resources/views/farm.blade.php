@@ -112,19 +112,15 @@
     </tr>
     <tr bgcolor="yellow">
         <td><strong>Các khoản giảm trừ (6)</strong></td>
-        <td align="right"><strong>{{ number_format($thu_bao_hiem + $thue_phai_nop + $doan_phi_nld, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
+        <td align="right"><strong>{{ number_format($thu_bao_hiem_cong_doan + $thue_phai_nop, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
     <tr>
-        <td>BHXH</td>
-        <td align="right">{{ number_format($thu_bao_hiem, 0, ',', ',') . ' ' . 'VNĐ' }}</td>
+        <td>BHXH, Đoàn phí (11,5%)</td>
+        <td align="right">{{ number_format($thu_bao_hiem_cong_doan, 0, ',', ',') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
         <td>Thuế TNCN</td>
         <td align="right">{{ number_format($thue_phai_nop, 0, ',', ',') . ' ' . 'VNĐ' }}</td>
-    </tr>
-    <tr>
-        <td>Đoàn phí</td>
-        <td align="right">{{ number_format($doan_phi_nld, 0, ',', ',') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr bgcolor="yellow" style="color: red">
         <td><strong>Lương thực lĩnh (5) - (6)</strong></td>

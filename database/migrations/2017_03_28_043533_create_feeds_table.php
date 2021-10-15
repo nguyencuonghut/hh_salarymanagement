@@ -48,9 +48,8 @@ class CreateFeedsTable extends Migration
             $table->bigInteger('san_luong_n1');
             $table->bigInteger('san_luong_n2');
             $table->bigInteger('san_luong_n3');
-            /*
-            $table->bigInteger('san_luong_n4');// Add new 2019
-            */
+            $table->bigInteger('san_luong_n4');
+            $table->bigInteger('san_luong_n5');
             $table->bigInteger('thuong_iomc');
             /*
             $table->bigInteger('vuot_n1');

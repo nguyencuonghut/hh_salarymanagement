@@ -36,7 +36,7 @@ class FactoryController extends Controller
 		// Setup your luong_nha_may@honghafeed mailer
 		$transport = Swift_SmtpTransport::newInstance(env('MAIL_HOST'), env('MAIL_PORT'), env('MAIL_ENCRYPTION'));
 		$transport->setUsername('luong_nha_may@honghafeed.com.vn');
-		$transport->setPassword('Hongha@123');
+		$transport->setPassword('Hongha@#$2021');
 
 		$factory_mailer = new Swift_Mailer($transport);
 		//dd($factory_mailer);

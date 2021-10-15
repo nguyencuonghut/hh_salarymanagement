@@ -135,6 +135,14 @@
         <td align="right">{{ number_format($san_luong_n3, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
+        <td style="text-indent: 2em"><i>Sản lượng nhóm 4</i></td>
+        <td align="right">{{ number_format($san_luong_n4, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+        <td style="text-indent: 2em"><i>Sản lượng nhóm 5</i></td>
+        <td align="right">{{ number_format($san_luong_n5, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
         <td><strong>Thưởng IOMC</strong></td>
         <td align="right"><strong>{{ number_format($thuong_iomc, 0, '.', '.') . ' ' . 'VNĐ' }}</strong></td>
     </tr>

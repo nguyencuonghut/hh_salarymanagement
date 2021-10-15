@@ -36,7 +36,7 @@ class FarmController extends Controller
 		// Setup your luong_trai@honghafeed mailer
 		$transport = Swift_SmtpTransport::newInstance(env('MAIL_HOST'), env('MAIL_PORT'), env('MAIL_ENCRYPTION'));
 		$transport->setUsername('luong_trai@honghafeed.com.vn');
-		$transport->setPassword('Hongha@@2020');
+		$transport->setPassword('Hongha@#$2021');
 
 		$farm_mailer = new Swift_Mailer($transport);
 		//dd($farm_mailer);

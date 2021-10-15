@@ -36,7 +36,7 @@ class FeedController extends Controller
 		// Setup your luong_cam@honghafeed mailer
 		$transport = Swift_SmtpTransport::newInstance(env('MAIL_HOST'), env('MAIL_PORT'), env('MAIL_ENCRYPTION'));
 		$transport->setUsername('luong_cam@honghafeed.com.vn');
-		$transport->setPassword('Hongha@123');
+		$transport->setPassword('Hongha@#$2021');
 
 		$feed_mailer = new Swift_Mailer($transport);
 		//dd($feed_mailer);
@@ -88,9 +88,8 @@ class FeedController extends Controller
                 'san_luong_n1' => $user->san_luong_n1,
                 'san_luong_n2' => $user->san_luong_n2,
                 'san_luong_n3' => $user->san_luong_n3,
-                /*
                 'san_luong_n4' => $user->san_luong_n4,
-                */
+                'san_luong_n5' => $user->san_luong_n5,
                 'thuong_iomc' => $user->thuong_iomc,
                 /*
                 'vuot_n1' => $user->vuot_n1,
@@ -209,9 +208,8 @@ class FeedController extends Controller
                         'san_luong_n1' => $value['san_luong_n1'],
                         'san_luong_n2' => $value['san_luong_n2'],
                         'san_luong_n3' => $value['san_luong_n3'],
-                        /*
-                        'san_luong_n4' => $value['san_luong_n4'],//Add new 2019
-                        */
+                        'san_luong_n4' => $value['san_luong_n4'],
+                        'san_luong_n5' => $value['san_luong_n5'],
                         'thuong_iomc' => $value['thuong_iomc'],
                         /*
                         'ty_le_gia_cam_de_thang_nay' => $value['ty_le_gia_cam_de_thang_nay'],

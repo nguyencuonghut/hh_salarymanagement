@@ -33,6 +33,8 @@ class Feed extends Model
                         'san_luong_n1',
                         'san_luong_n2',
                         'san_luong_n3',
+                        'san_luong_n4',
+                        'san_luong_n5',
                         'thuong_iomc',
                         'vuot_n1',
                         'vuot_n2',

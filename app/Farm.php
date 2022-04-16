@@ -28,6 +28,7 @@ class Farm extends Model
                         'tong_luong_chinh',
                         'thuong_kpi_thuc_te',
                         'tien_thuong_nang_suat',
+                        'tien_thuong_phong_dich',
                         'tong_phu_cap_tro_cap',
                         'tong_gio_tang_ca',
                         'tong_tien_tang_ca',

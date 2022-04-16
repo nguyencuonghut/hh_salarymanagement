@@ -68,13 +68,13 @@
         <td >Nghỉ lễ</td>
         <td align="right">{{ $nghi_le }} ngày</td>
     </tr>
-    <tr bgcolor="yellow">
-        <td><strong>Lương chính (1)</strong></td>
-        <td align="right"><strong>{{ number_format($tong_luong_chinh + $thuong_kpi_thuc_te + $tien_thuong_nang_suat, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
-    </tr>
     <tr>
-        <td>Lương ngày công</td>
+        <td>Lương ngày công (1)</td>
         <td align="right">{{ number_format($tong_luong_chinh, 0, ',', ',') . ' ' . 'VNĐ' }}</td>
+    </tr>
+    <tr bgcolor="yellow">
+        <td>Thưởng (2)</td>
+        <td align="right">{{ number_format($tien_thuong_phong_dich + $thuong_kpi_thuc_te + $tien_thuong_nang_suat, 0, ',', ',') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr>
         <td>Thưởng KPI thực tế</td>
@@ -84,14 +84,18 @@
         <td>Thưởng năng suất</td>
         <td align="right">{{ number_format($tien_thuong_nang_suat, 0, ',', ',') . ' ' . 'VNĐ' }}</td>
     </tr>
+    <tr>
+        <td>Thưởng phòng dịch</td>
+        <td align="right">{{ number_format($tien_thuong_phong_dich, 0, ',', ',') . ' ' . 'VNĐ' }}</td>
+    </tr>
     
     <tr bgcolor="yellow">
-        <td><strong>Phụ cấp (2)</strong></td>
+        <td><strong>Phụ cấp (3)</strong></td>
         <td align="right"><strong>{{ number_format($tong_phu_cap_tro_cap, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
     
     <tr bgcolor="yellow">
-        <td><strong>Lương tăng ca (3)</strong></td>
+        <td><strong>Lương tăng ca (4)</strong></td>
         <td align="right"><strong>{{ number_format($tong_tien_tang_ca, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
     <tr>
@@ -103,15 +107,15 @@
         <td align="right">{{ number_format($tong_tien_tang_ca, 0, ',', ',') . ' ' . 'VNĐ' }}    </td>
     </tr>
     <tr bgcolor="yellow">
-        <td><strong>Hỗ trợ/trừ khác (4)</strong></td>
+        <td><strong>Hỗ trợ/trừ khác (5)</strong></td>
         <td align="right"><strong>{{ number_format($khoan_bu_tru_khac, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
     <tr bgcolor="yellow">
-        <td><strong>Tổng thu nhập (5) = (1) + (2) + (3) + (4)</strong></td>
+        <td><strong>Tổng thu nhập (6) = (1) + (2) + (3) + (4) + (5)</strong></td>
         <td align="right"><strong>{{ number_format($tong_thu_nhap, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
     <tr bgcolor="yellow">
-        <td><strong>Các khoản giảm trừ (6)</strong></td>
+        <td><strong>Các khoản giảm trừ (7)</strong></td>
         <td align="right"><strong>{{ number_format($thu_bao_hiem_cong_doan + $thue_phai_nop, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
     <tr>
@@ -123,7 +127,7 @@
         <td align="right">{{ number_format($thue_phai_nop, 0, ',', ',') . ' ' . 'VNĐ' }}</td>
     </tr>
     <tr bgcolor="yellow" style="color: red">
-        <td><strong>Lương thực lĩnh (5) - (6)</strong></td>
+        <td><strong>Lương thực lĩnh (6) - (7)</strong></td>
         <td align="right"><strong>{{ number_format($thuc_linh, 0, ',', ',') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
 </table>

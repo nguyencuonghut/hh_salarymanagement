@@ -36,6 +36,7 @@ class CreateFarmsTable extends Migration
             $table->bigInteger('tong_luong_chinh');
             $table->bigInteger('thuong_kpi_thuc_te');
             $table->bigInteger('tien_thuong_nang_suat');
+            $table->bigInteger('tien_thuong_phong_dich');
             $table->bigInteger('tong_phu_cap_tro_cap');
             $table->float('tong_gio_tang_ca');
             $table->bigInteger('tong_tien_tang_ca');

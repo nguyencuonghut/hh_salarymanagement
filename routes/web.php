@@ -30,3 +30,8 @@ Route::post('importExcelFactory', 'FactoryController@importExcelFactory');
 Route::get('/farm', 'FarmController@importExport');
 Route::get('sendfarmmail/{type}', 'FarmController@sendfarmmail');
 Route::post('importExcelFarm', 'FarmController@importExcelFarm');
+
+
+Route::get('/bun', 'BunController@importExport');
+Route::get('sendbunmail/{type}', 'BunController@sendbunmail');
+Route::post('importExcelBun', 'BunController@importExcelBun');

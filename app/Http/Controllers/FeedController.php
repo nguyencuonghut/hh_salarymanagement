@@ -69,8 +69,7 @@ class FeedController extends Controller
                 'tra_giu_qua_han_npp' => $user->tra_giu_qua_han_npp,
                 'ho_tro_tru_khac' => $user->ho_tro_tru_khac,
                 'thuong_san_luong' => $user->thuong_san_luong,
-                'san_luong_ke_hoach' => $user->san_luong_ke_hoach,
-                'san_luong_ke_hoach_dong_thit' => $user->san_luong_ke_hoach_dong_thit,
+                'san_luong_goc_dong_thit' => $user->san_luong_goc_dong_thit,
                 'san_luong_thuc_hien' => $user->san_luong_thuc_hien,
                 'san_luong_thuc_hien_dong_thit' => $user->san_luong_thuc_hien_dong_thit,
                 /*
@@ -78,19 +77,17 @@ class FeedController extends Controller
                 'ty_le_gia_cam_de_thang_truoc' => $user->ty_le_gia_cam_de_thang_truoc,
                 'tang_giam_ty_le_dong_thit' => $user->tang_giam_ty_le_dong_thit,
                 */
-                'ngan_sach_su_dung' => $user->ngan_sach_su_dung,
-                'ngan_sach_cho_phep' => $user->ngan_sach_cho_phep,
                 /*
                 'ty_le_mo_trai_KEY' => $user->ty_le_mo_trai_KEY,
                 'ty_le_xay_dung_trai_KEY' => $user->ty_le_xay_dung_trai_KEY,
                 */
-                'tien_thuong_dat_goc' => $user->tien_thuong_dat_goc,
+                'tien_thuong_dat' => $user->tien_thuong_dat,
                 'san_luong_n1' => $user->san_luong_n1,
                 'san_luong_n2' => $user->san_luong_n2,
                 'san_luong_n3' => $user->san_luong_n3,
                 'san_luong_n4' => $user->san_luong_n4,
                 //'san_luong_n5' => $user->san_luong_n5,
-                'thuong_iomc' => $user->thuong_iomc,
+                'thuong_dong_de' => $user->thuong_dong_de,
                 /*
                 'vuot_n1' => $user->vuot_n1,
                 'vuot_n2' => $user->vuot_n2,
@@ -198,19 +195,16 @@ class FeedController extends Controller
                         'tra_giu_qua_han_npp' => $value['tra_giu_qua_han_npp'], //modify name 2019
                         'ho_tro_tru_khac' => $value['ho_tro_tru_khac'],
                         'thuong_san_luong' => $value['thuong_san_luong'],
-                        'san_luong_ke_hoach' => $value['san_luong_ke_hoach'],
-                        'san_luong_ke_hoach_dong_thit' => $value['san_luong_ke_hoach_dong_thit'],//Add new 2019
+                        'san_luong_goc_dong_thit' => $value['san_luong_goc_dong_thit'],//Add new 2019
                         'san_luong_thuc_hien' => $value['san_luong_thuc_hien'],
                         'san_luong_thuc_hien_dong_thit' => $value['san_luong_thuc_hien_dong_thit'],//Add new 2019
-                        'ngan_sach_su_dung' => $value['ngan_sach_su_dung'],
-                        'ngan_sach_cho_phep' => $value['ngan_sach_cho_phep'],
-                        'tien_thuong_dat_goc' => $value['tien_thuong_dat_goc'],
+                        'tien_thuong_dat' => $value['tien_thuong_dat'],
                         'san_luong_n1' => $value['san_luong_n1'],
                         'san_luong_n2' => $value['san_luong_n2'],
                         'san_luong_n3' => $value['san_luong_n3'],
                         'san_luong_n4' => $value['san_luong_n4'],
                         //'san_luong_n5' => $value['san_luong_n5'],
-                        'thuong_iomc' => $value['thuong_iomc'],
+                        'thuong_dong_de' => $value['thuong_dong_de'],
                         /*
                         'ty_le_gia_cam_de_thang_nay' => $value['ty_le_gia_cam_de_thang_nay'],
                         'ty_le_gia_cam_de_thang_truoc' => $value['ty_le_gia_cam_de_thang_truoc'],

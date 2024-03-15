@@ -95,12 +95,8 @@
         <td align="right"><strong>{{ number_format($thuong_san_luong, 0, '.', '.') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
     <tr>
-        <td style="text-indent: 2em"><i>Kế hoạch tổng sản lượng</i></td>
-        <td align="right">{{ number_format($san_luong_ke_hoach, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-indent: 2em"><i>Kế hoạch dòng thịt</i></td>
-        <td align="right">{{ number_format($san_luong_ke_hoach_dong_thit, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td style="text-indent: 2em"><i>Gốc dòng thịt</i></td>
+        <td align="right">{{ number_format($san_luong_goc_dong_thit, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
         <td style="text-indent: 2em"><i>Thực hiện tổng sản lượng</i></td>
@@ -111,16 +107,8 @@
         <td align="right">{{ number_format($san_luong_thuc_hien_dong_thit, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
-        <td style="text-indent: 2em"><i>Ngân sách sử dụng</i></td>
-        <td align="right">{{ number_format($ngan_sach_su_dung, 2, '.', '.') . ' ' . 'đ/kg' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    </tr>
-    <tr>
-        <td style="text-indent: 2em"><i>Ngân sách cho phép</i></td>
-        <td align="right">{{ number_format($ngan_sach_cho_phep, 2, '.', '.') . ' ' . 'đ/kg' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-    </tr>
-    <tr>
-        <td><b>Thưởng đạt kế hoạch tháng (chi trả 50%)</b></td>
-        <td align="right"><b>{{ number_format($tien_thuong_dat_goc, 0, '.', '.') . ' ' . 'VNĐ' }}</b></td>
+        <td><b>Thưởng đạt gốc tháng (chi trả 50%)</b></td>
+        <td align="right"><b>{{ number_format($tien_thuong_dat, 0, '.', '.') . ' ' . 'VNĐ' }}</b></td>
     </tr>
     <tr>
         <td style="text-indent: 2em"><i>Sản lượng nhóm 1</i></td>
@@ -139,8 +127,8 @@
         <td align="right">{{ number_format($san_luong_n4, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
-        <td><strong>Thưởng IOMC</strong></td>
-        <td align="right"><strong>{{ number_format($thuong_iomc, 0, '.', '.') . ' ' . 'VNĐ' }}</strong></td>
+        <td><strong>Thưởng dòng đẻ</strong></td>
+        <td align="right"><strong>{{ number_format($thuong_dong_de, 0, '.', '.') . ' ' . 'VNĐ' }}</strong></td>
     </tr>
     <tr>
         <td>Thưởng quý</td>

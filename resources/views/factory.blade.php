@@ -136,12 +136,16 @@
         <td><strong>VII. Hỗ trợ/trừ khác</strong></td>
         <td align="right"><strong>{{ number_format($ho_tro_tru, 0, ',', ',') }}</strong></td>
     </tr>
+    <tr bgcolor="yellow">
+        <td><strong>VIII. Tiền sinh nhật</strong></td>
+        <td align="right"><strong>{{ number_format($tien_sinh_nhat, 0, ',', ',') }}</strong></td>
+    </tr>
     <tr bgcolor="yellow" style="color:red">
-        <td><strong>VIII. TỔNG LƯƠNG ĐƯỢC LĨNH</strong></td>
+        <td><strong>IX. TỔNG LƯƠNG ĐƯỢC LĨNH</strong></td>
         <td align="right"><strong>{{ number_format($tong_luong, 0, ',', ',') }}</strong></td>
     </tr>
     <tr bgcolor="yellow">
-        <td><strong>IX. Các khoản giảm trừ</strong></td>
+        <td><strong>X. Các khoản giảm trừ</strong></td>
         <td align="right"><strong>{{ number_format($cac_khoan_giam_tru, 0, ',', ',') }}</strong></td>
     </tr>
     <tr>
@@ -153,7 +157,7 @@
         <td align="right">{{ number_format($bao_hiem, 0, ',', ',') }}</td>
     </tr>
     <tr bgcolor="yellow">
-        <td><strong>X. SỐ TIỀN CHI TRẢ</strong></td>
+        <td><strong>XI. SỐ TIỀN CHI TRẢ</strong></td>
         <td align="right"><strong>{{ number_format($thuc_linh, 0, ',', ',') }}</strong></td>
     </tr>
 </table>

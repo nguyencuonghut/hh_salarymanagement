@@ -40,6 +40,7 @@ class CreateFactoriesTable extends Migration
             $table->bigInteger('tien_kpi');
             $table->bigInteger('thuong_sl');
             $table->bigInteger('ho_tro_tru');
+            $table->bigInteger('tien_sinh_nhat');
             $table->bigInteger('tong_luong');
             $table->bigInteger('cac_khoan_giam_tru');
             $table->bigInteger('tncn');

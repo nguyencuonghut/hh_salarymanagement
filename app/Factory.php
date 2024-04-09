@@ -32,6 +32,7 @@ class Factory extends Model
                         'tien_kpi',
                         'thuong_sl',
                         'ho_tro_tru',
+                        'tien_sinh_nhat',
                         'tong_luong',
                         'cac_khoan_giam_tru',
                         'tncn',

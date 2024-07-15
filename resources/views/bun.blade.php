@@ -69,6 +69,10 @@
         <td>{{ $ngay_le }}</td>
     </tr>
     <tr>
+        <td>Trực trưa</td>
+        <td>{{ $truc_trua }}</td>
+    </tr>
+    <tr>
         <td>Tăng ca</td>
         <td>{{ $tang_ca }}</td>
     </tr>
@@ -113,28 +117,56 @@
         <td align="right">{{ number_format($tc_trach_nhiem, 0, ',', ',') }}</td>
     </tr>
     <tr>
+        <td style="text-indent: 2em">Đi lại</td>
+        <td align="right">{{ number_format($tc_di_lai, 0, ',', ',') }}</td>
+    </tr>
+    <tr>
+        <td style="text-indent: 2em">Hỗ trợ khác</td>
+        <td align="right">{{ number_format($tc_ho_tro_khac, 0, ',', ',') }}</td>
+    </tr>
+    <tr>
         <td style="text-indent: 2em">Hỗ trợ trực tết</td>
         <td align="right">{{ number_format($tc_truc_tet, 0, ',', ',') }}</td>
     </tr>
     <tr bgcolor="yellow">
         <td><strong>Thưởng (2)</td>
-        <td><strong>{{ number_format($thuong, 0, ',', ',') }}</td>
+        <td><strong>{{ number_format($thuong_nang_suat + $thuong_hieu_suat_cong_viec + $thuong_phong_dich + $thuong_chuong + $sinh_nhat, 0, ',', ',') }}</td>
+    </tr>
+    <tr>
+        <td style="text-indent: 2em">Thưởng năng suất</td>
+        <td align="right">{{ number_format($thuong_nang_suat, 0, ',', ',') }}</td>
+    </tr>
+    <tr>
+        <td style="text-indent: 2em">Thưởng hiệu suất công việc</td>
+        <td align="right">{{ number_format($thuong_hieu_suat_cong_viec, 0, ',', ',') }}</td>
+    </tr>
+    <tr>
+        <td style="text-indent: 2em">Thưởng phòng dịch</td>
+        <td align="right">{{ number_format($thuong_phong_dich, 0, ',', ',') }}</td>
+    </tr>
+    <tr>
+        <td style="text-indent: 2em">Thưởng chuồng</td>
+        <td align="right">{{ number_format($thuong_chuong, 0, ',', ',') }}</td>
+    </tr>
+    <tr>
+        <td style="text-indent: 2em">Sinh nhật</td>
+        <td align="right">{{ number_format($sinh_nhat, 0, ',', ',') }}</td>
     </tr>
     <tr bgcolor="yellow">
-        <td><strong>Khoản bổ sung (nếu có) (3)</td>
+        <td><strong>Khoản bù trừ (3)</td>
         <td><strong>{{ number_format($cac_khoan_bu_tru, 0, ',', ',') }}</td>
     </tr>
     <tr bgcolor="yellow">
         <td><strong>Các khoản giảm trừ (4)</td>
-        <td><strong>{{ number_format($tt_tru_tien_dm_vs + $bao_hiem + $thue_phai_nop + $luong_da_ung + $tru_bhyt, 0, ',', ',') }}</td>
+        <td><strong>{{ number_format($tt_tru_tien_dm_vs + $bao_hiem + $cong_doan + $thue_phai_nop, 0, ',', ',') }}</td>
     </tr>
     <tr>
         <td style="text-indent: 2em">Trừ đi muộn, về sớm</td>
         <td align="right">{{ number_format($tt_tru_tien_dm_vs, 0, ',', ',') }}</td>
     </tr>
     <tr>
-        <td style="text-indent: 2em">Phí BHXH</td>
-        <td align="right">{{ number_format($bao_hiem, 0, ',', ',') }}</td>
+        <td style="text-indent: 2em">Phí BHXH, KPCĐ</td>
+        <td align="right">{{ number_format($bao_hiem + $cong_doan, 0, ',', ',') }}</td>
     </tr>
     <tr>
         <td style="text-indent: 2em">Thu nhập tính thuế</td>
@@ -144,17 +176,9 @@
         <td style="text-indent: 2em">Thuế TNCN</td>
         <td align="right">{{ number_format($thue_phai_nop, 0, ',', ',') }}</td>
     </tr>
-    <tr>
-        <td style="text-indent: 2em">Lương đã ứng</td>
-        <td align="right">{{ number_format($luong_da_ung, 0, ',', ',') }}</td>
-    </tr>
-    <tr>
-        <td style="text-indent: 2em">Trừ BHYT</td>
-        <td align="right">{{ number_format($tru_bhyt, 0, ',', ',') }}</td>
-    </tr>
     <tr bgcolor="yellow">
         <td><strong>Lương thực nhận (1) + (2) + (3) - (4)</td>
-        <td><strong>{{ number_format($tt_luong_cung + $tt_phu_cap + $tt_lam_dem + $tt_tang_ca_le + $tc_o_trai + $tc_trach_nhiem + $tc_truc_tet + $thuong + $cac_khoan_bu_tru - $tt_tru_tien_dm_vs - $bao_hiem - $thu_nhap_tinh_thue - $luong_da_ung - $tru_bhyt, 0, ',', ',') }}</td>
+        <td><strong>{{ number_format($tt_luong_cung + $tt_phu_cap + $tt_lam_dem + $tt_tang_ca_le + $tc_o_trai + $tc_trach_nhiem + $tc_truc_tet + $thuong_nang_suat + $thuong_hieu_suat_cong_viec + $thuong_phong_dich + $thuong_chuong + $sinh_nhat + $cac_khoan_bu_tru - ($tt_tru_tien_dm_vs + $bao_hiem + $cong_doan + $thue_phai_nop), 0, ',', ',') }}</td>
     </tr>
 </table>
 

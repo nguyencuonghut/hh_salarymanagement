@@ -90,7 +90,10 @@
     </tr>
     <tr bgcolor="yellow">
         <td><strong>Lương, phụ cấp (1)</td>
-        <td><strong>{{ number_format($tt_luong_cung + $tt_phu_cap + $tt_lam_dem + $tt_tang_ca_le + $tc_o_trai + $tc_trach_nhiem + $tc_truc_tet, 0, ',', ',') }}</td>
+        <td><strong>{{ number_format(
+		$tt_luong_cung + $tt_phu_cap + $tt_lam_dem + $tt_tang_ca_le + $tc_o_trai + $tc_trach_nhiem + $tc_di_lai + $tc_ho_tro_khac + $tc_truc_tet
+		, 0, ',', ','
+		) }}</td>
     </tr>
     <tr>
         <td style="text-indent: 2em">Lương cứng</td>
@@ -178,7 +181,7 @@
     </tr>
     <tr bgcolor="yellow">
         <td><strong>Lương thực nhận (1) + (2) + (3) - (4)</td>
-        <td><strong>{{ number_format($tt_luong_cung + $tt_phu_cap + $tt_lam_dem + $tt_tang_ca_le + $tc_o_trai + $tc_trach_nhiem + $tc_truc_tet + $thuong_nang_suat + $thuong_hieu_suat_cong_viec + $thuong_phong_dich + $thuong_chuong + $sinh_nhat + $cac_khoan_bu_tru - ($tt_tru_tien_dm_vs + $bao_hiem + $cong_doan + $thue_phai_nop), 0, ',', ',') }}</td>
+        <td><strong>{{ number_format($tt_luong_cung + $tt_phu_cap + $tt_lam_dem + $tt_tang_ca_le + $tc_o_trai + $tc_trach_nhiem + $tc_di_lai + $tc_ho_tro_khac + $tc_truc_tet + $thuong_nang_suat + $thuong_hieu_suat_cong_viec + $thuong_phong_dich + $thuong_chuong + $sinh_nhat + $cac_khoan_bu_tru - ($tt_tru_tien_dm_vs + $bao_hiem + $cong_doan + $thue_phai_nop), 0, ',', ',') }}</td>
     </tr>
 </table>
 

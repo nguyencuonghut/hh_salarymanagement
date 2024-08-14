@@ -15,6 +15,7 @@ class CreateFeedsTable extends Migration
     {
         Schema::create('feeds', function (Blueprint $table) {
             $table->bigInteger('stt');
+            $table->string('chuc_danh');
             $table->string('ma_nhan_vien', 10);
             $table->string('ho_va_ten', 60);
             $table->string('email', 60);

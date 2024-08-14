@@ -107,7 +107,11 @@
         <td align="right">{{ number_format($san_luong_thuc_hien_dong_thit, 0, '.', '.') . ' ' . 'KG' }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
+        @if('NVKD' == $chuc_danh)
         <td><b>Thưởng đạt gốc tháng (chi trả 50%)</b></td>
+        @else
+        <td><b>Thưởng đạt gốc tháng (chi trả 100%)</b></td>
+        @endif
         <td align="right"><b>{{ number_format($tien_thuong_dat, 0, '.', '.') . ' ' . 'VNĐ' }}</b></td>
     </tr>
     <tr>

@@ -56,7 +56,8 @@ class FeedController extends Controller
             $email = $user->email;
             //echo $user->ten_nhan_vien;
             /* Create message content */
-            $emailcontent = array('ma_nhan_vien' => $user->ma_nhan_vien,
+            $emailcontent = array('chuc_danh' => $user->chuc_danh,
+                'ma_nhan_vien' => $user->ma_nhan_vien,
                 'ho_va_ten' => $user->ho_va_ten,
                 'ngay_cong_quy_dinh' => $user->ngay_cong_quy_dinh,
                 'ngay_cong_thuc_te' => $user->ngay_cong_thuc_te,
@@ -180,7 +181,8 @@ class FeedController extends Controller
             if(!empty($data) && $data->count()){
                 //dd($data->toArray());
                 foreach ($data->toArray() as $key => $value) {
-                    $insert[] = ['stt' => $value['stt'],
+                    $insert[] = ['chuc_danh' => $value['chuc_danh'],
+                        'stt' => $value['stt'],
                         'ma_nhan_vien' => $value['ma_nhan_vien'],
                         'ho_va_ten' => $value['ho_va_ten'],
                         'email' => $value['email'],
